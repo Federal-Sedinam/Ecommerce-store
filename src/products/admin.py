@@ -1,30 +1,48 @@
 from django.contrib import admin
-from .models import Product, Wishlist, Review, Support, OrderItem, PaymentGateway, Shipping
 
-@admin.register(Product)
+from . import models
+
+
+@admin.register(models.Product)
 class ProductAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Wishlist)
+
+@admin.register(models.Wishlist)
 class WishlistAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Review)
+
+@admin.register(models.Review)
 class ReviewAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Support)
+
+@admin.register(models.Support)
 class SupportAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(OrderItem)
+
+@admin.register(models.OrderItem)
 class OrderItemAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(PaymentGateway)
+
+@admin.register(models.PaymentGateway)
 class PaymentGatewayAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Shipping)
+
+@admin.register(models.Shipping)
 class ShippingAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(models.Promotion)
+class PromotionAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(models.Cart)
+class CartAdmin(admin.ModelAdmin):
     pass

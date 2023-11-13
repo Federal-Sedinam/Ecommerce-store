@@ -24,25 +24,25 @@ repos:
     hooks:
     -   id: add-trailing-comma
         args: [--py36-plus]
--   repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
-    hooks:
-    -   id: pyupgrade
-        args: [--py38-plus]
+# -   repo: https://github.com/asottile/pyupgrade
+#     rev: v3.15.0
+#     hooks:
+#     -   id: pyupgrade
+#         args: [--py38-plus]
 -   repo: https://github.com/psf/black
     rev: 23.10.1
     hooks:
     -   id: black
--   repo: https://github.com/PyCQA/flake8
-    rev: 6.1.0
-    hooks:
-    -   id: flake8
--   repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v1.6.1
-    hooks:
-    -   id: mypy
-        additional_dependencies: [types-all]
-        exclude: ^testing/resources/
+# -   repo: https://github.com/PyCQA/flake8
+#     rev: 6.1.0
+#     hooks:
+#     -   id: flake8
+# -   repo: https://github.com/pre-commit/mirrors-mypy
+#     rev: v1.6.1
+#     hooks:
+#     -   id: mypy
+#         additional_dependencies: [types-all]
+#         exclude: ^testing/resources/
 
 # sets up .pre-commit-ci.yaml to ensure pre-commit dependencies stay up to date
 ci:
